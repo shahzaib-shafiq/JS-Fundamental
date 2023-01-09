@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+    const lang = ['js','c','c++','java','php'];
+
+    //es6
+
+    let [top1,top2,top3,top4,top5]=lang;
+    
+    console.log(top1);
+    
+    console.log(lang.length);
+    let [topi,,,,last]=lang;
+    
+      // ` `  are called backtick 
+
+    console.log(`my favoutite prog language is ${topi} and my least fav prog language is ${last} 
+    
+    
+    
+    `)   ;
+
+
+
+    let [to1,to2]=lang;
+    console.log(`my favourite prog lang is  ${to1} and my second favourite is ${to2}`)
+
+
+//swapping two numbers
+
+let a =5;
+let b=100;
+
+
+console.log(`
+before swapping 
+
+the first number is ${a}  and the second number is ${b}`);
+
+//swapping 
+
+[a,b]=[b,a]
+console.log(`
+after swapping 
+
+the first number is ${a}  and the second number is ${b}
+
+
+`);
+
+
+
+//destructuting of objects
+
+
+//const can also be use instead of let
+
+
+let biodata = {
+    name:"shahzaib",
+    age:22,
+    grad:"BCS",
+hob:{
+    hob1:"playing cricket",
+    hob2:"travelling"
+}
+
+}
+
+let {name,age,grad,hob}=biodata; 
+//console.log(biodata.name);
+console.log(grad); 
+
+console.log(`my name is  ${name} . my age is  ${age} . my education is ${grad} 
+my hobbies are ${hob.hob1} 
+and some other are ${hob.hob2}
+
+`)
+
+
+</script>
+<body>
+    
+</body>
+</html>
