@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+ 
+const pobj1  = new Promise((resolve,reject)=>
+{
+setTimeout(()=>{
+    let roll_no = [1,2,3,4,5,6];
+    resolve(roll_no);
+},2000);
+});
+
+const getBiodata=(indexdata)=>{
+    return new Promise((resolve,reject)=>{
+
+        setTimeout((indexdata)=>{
+            let biodata={
+name:"SHAHZAIB",
+age:22
+            
+            }
+resolve(`My name is ${biodata.name} and I am ${biodata.age} years old`)
+        },2000,indexdata)
+    });
+}
+
+
+async function getData() {
+
+    try{
+
+        const   rollnodata = await pobj1;
+        console.log(rollnodata);
+        
+        
+        const   persondata = await getBiodata();
+        console.log(persofsandata)
+        return persondata;
+    }
+    catch(error)
+    {
+console.log(`error is ${error}`);
+    }
+
+}
+
+//console.log('hello ')
+
+
+const getname=getData();
+console.log(getname);
+
+</script>
+</head>
+<body>
+    <h1>Async/Await</h1>
+</body>
+</html>

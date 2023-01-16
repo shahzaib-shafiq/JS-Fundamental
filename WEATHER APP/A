@@ -1,0 +1,21 @@
+Cloud_pct
+Feels_like
+Humidity
+Max_temp
+Min_temp
+Sunrise
+Sunset
+Temp
+Wind_degrees
+Wind_speed
+
+
+cloud_pct   =response.Cloud_pct 
+feels_like=response.feels_like
+humidity=response.Humidity
+min_temp=response.Min_temp
+max_temp=response.Max_temp
+wind_speed=response.wind_speed
+wind_degrees=response.wind_degrees
+sunrise=response.sunrise
+sunset=response.sunset
